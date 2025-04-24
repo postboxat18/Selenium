@@ -62,9 +62,10 @@ def Login():
     if (action == 1):
         try:
             fileName = "Trial Balance"
-
-            select = Select(driver.find_element("xpath", ""))
-            select.select_by_visible_print()
+            driver.find_element("xpath", xpath).click()
+            driver.find_element("xpath", xpath).send_keys(fileName)
+            #select = Select(driver.find_element("xpath", ""))
+            #select.select_by_visible_print()
             time.sleep(2)
 
 
